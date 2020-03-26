@@ -1,0 +1,33 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 3.2 Final//EN">
+<html>
+	<head>
+	</head>
+	<body bgcolor="white">
+		This is a GUI application, a command line utility, a Java bean, a web application and a general API for Case Based Reasoning.
+		<h2>GUI application</h2>
+		To run the package with a graphical user interface, please run "<code>java -jar FreeCBR.jar</code>" or "<code>java -cp FreeCBR.jar FreeCBR.GUI</code>".
+		<h2>Command line utility</h2>
+		To run the package as a command line utility, please run "<code>java -cp FreeCBR.jar FreeCBR.Console</code>".
+		<h2>Java bean</h2>
+		To use the package in a JSP-solution, the suggested method is to use<br />
+		<code>
+			&lt;jsp:useBean id="CBRBean" scope="application" class="FreeCBR.CBR"/&gt;<br />
+			&lt;%<br />
+			&nbsp;&nbsp;CBRBean.setDatafile("xxxx");<br />
+			&nbsp;&nbsp;CBRBean.readData();<br />
+			%&gt;<br />
+		</code>
+		and in the result page use<br />
+		<code>
+			&lt;jsp:useBean id="CBRBean" scope="application" class="FreeCBR.CBR"/&gt;<br />
+			&lt;%<br />
+			&nbsp;&nbsp;CBRBean.search(request);<br />
+			%&gt;<br />
+		</code>
+		<h2>Web application</h2>
+		There are three jsp pages within the package. They are named "test.jsp", "page1.jsp" and "page2.jsp". 
+		test.jsp displays information about the case set, page1.jsp allows searches in the case set and test2.jsp will display the result of the search.
+		
+	</body>
+</html>
+
